@@ -1,0 +1,111 @@
+.top-product{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+    font-family: 'Rajdhani';font-size: 22px;
+}
+.product {
+  background: url(retro-living-room-interior-design.jpg) no-repeat center;
+  background-size: cover;
+  padding: 10px;
+  height: 950px; /* Should be removed. Only for demonstration */
+}
+/* Create three equal columns that floats next to each other */
+
+
+
+.product {
+  text-align: center;
+}
+
+.top-product {
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between columns as needed */
+}
+
+.column {
+  width: 200px; /* Set the desired width for each column */
+  height: 200px; /* Set the desired height for each column */
+  background-size: cover; /* Ensure the background image covers the entire column */
+  color: rgb(255, 145, 0);
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Apply background images to specific columns */
+.column:nth-child(1) {
+  background-image: url('sofa.jpeg');
+}
+
+.column:nth-child(2) {
+  background-image: url('table.jpeg');
+}
+
+.column:nth-child(3) {
+  background-image: url('wine rack.jpeg');
+}
+
+/* Add styles for the columns with background-color */
+.column:nth-child(4){
+  background-image: url('bed.jpeg');
+}
+.column:nth-child(6){
+  background-image: url('tv\ stand.jpeg');
+}
+.column:nth-child(8) {
+  background-color: #bbb;
+}
+
+.column:nth-child(5) {
+  background-color: #cff;
+}
+
+.column:nth-child(7),
+.column:nth-child(9) {
+  background-color: #be8282;
+}
+
+.column:nth-child(10) {
+  background-color: #615959;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .column {
+    width: 100%; /* Set the width to 100% on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /* Style the footer */
+  .footer {
+    background-color: #000000;
+    padding: 10px;
+    color: #eee;
+    text-align: center;
+  }
